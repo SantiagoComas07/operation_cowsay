@@ -12,4 +12,4 @@ services:
   volumes:
     .:/app
 command:
-    node backend/src/index.js
+    nodemon backend/src/index.js
