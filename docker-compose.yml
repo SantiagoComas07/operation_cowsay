@@ -1,0 +1,8 @@
+version: '1.0'
+
+services:
+  calculator: 
+    build: .
+    container_name: cowCalculator
+  ports:
+   - "1000:2000"
