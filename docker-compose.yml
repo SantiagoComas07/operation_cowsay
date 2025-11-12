@@ -1,15 +1,14 @@
-version: '1.0'
 
 services:
   calculator: 
     build: .
     image: cowsay_op
     container_name: cowCalculator
-  ports:
-   - "1000:2000"
-  environment:
-   - PORT:1000
-  volumes:
-   - .:/app
-command:
-    nodemon backend/src/index.js
+    ports:
+    - "1000:2000"
+    environment:
+    - PORT:1000
+    volumes:
+    - .:/app
+    command:
+      nodemon backend/src/index.js
